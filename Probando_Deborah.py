@@ -10,3 +10,6 @@ ventana.resizable(width=False, height=False)
 # ETIQUETA DE BIENVENIDA
 etiqueta_bienvenida = tkinter.Label(ventana, text="¡Hola soy Deborah Obes!", font=("Helvetica", 16), bg="lightblue")
 etiqueta_bienvenida.pack(pady=20)
+
+# Ejecutar la ventana
+ventana.mainloop()
