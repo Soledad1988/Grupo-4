@@ -7,7 +7,7 @@ ventana.title("App de saludo con fondo")
 ventana.geometry("400x300")
 
 # Cargar la imagen de fondo
-imagen_fondo = Image.open("fondo.jpg")  # reemplazá con tu imagen
+imagen_fondo = Image.open("imagen_transparente.png")  # reemplazá con tu imagen
 imagen_fondo = imagen_fondo.resize((400, 300))  # ajusta al tamaño de la ventana
 fondo = ImageTk.PhotoImage(imagen_fondo)
 
@@ -42,3 +42,4 @@ etiqueta_resultado.pack(pady=10)
 
 # Mostrar la ventana
 ventana.mainloop()
+
