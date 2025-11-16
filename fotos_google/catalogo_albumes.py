@@ -35,8 +35,8 @@ albumes = [
         "enlace": "https://photos.google.com/share/AF1QipNatt5t-g5G7tHOwQBSb10A4pHR-Rw6eII8KTFZjULxgBSRDDuDGXPl4CAlKvxOmw?key=Y3NnX1JfMmY4YUw4WGpZS1FKWl9XVzY1bHN4TE1n"
     },
     {
-        "nombre": "Laguna Argüello, Resistencia",
-        "imagen": "laguna.jpg",
+        "nombre": "Centro de Resistencia",
+        "imagen": "centro.jpg",
         "enlace": "https://photos.google.com/share/AF1QipND74qYD1MtP8fAbeYc4wA6V8dyKUVpEwIN1DzhU-pDM2VjLD2EK4Aovw-rUlHC3g?key=R1Zmc1BzV0hXV0RPd3ZOVDNMRHZINTREUHdfbFB3"
     }
 ]
@@ -55,7 +55,7 @@ ventana.geometry("950x900")
 # Título principal
 titulo = tk.Label(
     ventana,
-    text="Catálogo Turístico",
+    text="Catálogo Turístico - Resistencia / Corrientes",
     font=("Helvetica", 24, "bold"),
     bg="#E8EAFE",
     fg="#1B1B3A"
@@ -136,3 +136,4 @@ autor.pack(side="bottom", pady=15)
 
 
 ventana.mainloop()
+
