@@ -4,7 +4,7 @@ from PIL import Image, ImageTk
 import webbrowser
 import os
 
-
+# Funciones
 def abrir_album(url):
     webbrowser.open(url)
 
@@ -20,24 +20,24 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # Datos de los álbumes
 albumes = [
     {
-        "nombre": "Parque 2 de Febrero",
-        "imagen": "parque.jpg",
-        "enlace": "https://photos.google.com/share/AF1QipMdTJhWieCycslhbDi-TGHhUJpMLh5HBJtrV_SKZcx-1md86xVxDhgiH0fhORj4Ig?key=YW1sMVFMNXYxWlRISTYtQWJQdjhUU0t1YjZkVXpR"
+        "nombre": "Parque 2 de Febrero, Resistencia",
+        "imagen": "parque.png",
+        "enlace": "https://photos.google.com/share/AF1QipMMjxajwctv0Wun0DUCqf7_RcukhdsQjdq7vYZqi3OXxd-7cM3mO7kE5MdmDtI0PA?key=cy16QzJydy1ZdEJ0NGQ5b0pSNHNTYno0d1pXdVpn"
     },
     {
-        "nombre": "Plaza de los Abuelos",
-        "imagen": "plaza.jpg",
-        "enlace": "https://photos.google.com/share/AF1QipMiC48nkng_zHslWXoj5yHTBLOqdXovGZoqOUmUFe3e-gVcBATEs84Jfj33TmpyiQ?key=NzFLdmNfd2xGSEU1TGdiQzg5UXRqVkFaZDh0VzdR"
+        "nombre": "Paseo costanero, corrientes",
+        "imagen": "costanera.png",
+        "enlace": "https://photos.google.com/share/AF1QipPUb3vpEOzPO9yA04tQX1dKfRsY1NyrcwSig36dEMx1UkbPfdugWQJ0KW6dYdyDJw?key=UnJHZGdWR2tnT3BFSXNsMUo1S1Q0dmVEVExGeVB3"
     },
     {
-        "nombre": "Plazoleta San Martín",
-        "imagen": "plazoleta.jpg",
-        "enlace": "https://photos.google.com/share/AF1QipNatt5t-g5G7tHOwQBSb10A4pHR-Rw6eII8KTFZjULxgBSRDDuDGXPl4CAlKvxOmw?key=Y3NnX1JfMmY4YUw4WGpZS1FKWl9XVzY1bHN4TE1n"
+        "nombre": "La Unidad, corrientes",
+        "imagen": "unidad.png",
+        "https://photos.google.com/share/AF1QipNYx1ENMR_0ZSkVpMDug6Wu0lIBEU5wwWnCbmhPtFDpflTdnP3LXX5SGU6iOqJfng?key=ek9JTTVhUlJKcHlMWDM1aEM2RmdHTndGOWNKZzJB"
     },
     {
-        "nombre": "Sendero Laguna Argüello",
-        "imagen": "sendero.jpg",
-        "enlace": "https://photos.google.com/share/AF1QipND74qYD1MtP8fAbeYc4wA6V8dyKUVpEwIN1DzhU-pDM2VjLD2EK4Aovw-rUlHC3g?key=R1Zmc1BzV0hXV0RPd3ZOVDNMRHZINTREUHdfbFB3"
+        "nombre": "Centro de Resistencia",
+        "imagen": "centro.jpg",
+        "enlace": "https://photos.google.com/share/AF1QipPmjQhg-ZZOznpj4s67Ju5qSG-MNiJ1UeLmHBNdZFHT9FbxwP502Fr6wla2Z6nqvQ?key=US0yTzN3UDkwSXVCMGw1b3FJcGNkTnJWbXpsY2FB"
     }
 ]
 
@@ -48,6 +48,9 @@ albumes = [
 # -------------------------
 
 ventana = tk.Tk()
+ventana.title("Catálogo de Álbumes - Grupo 4")
+ventana.configure(bg="#E8EAFE")   # Fondo suave
+ventana.geometry("950x900")
 ventana.title("Catálogo de Álbumes")
 ventana.configure(bg="#EEE8FE")   # Fondo suave
 ventana.geometry("800x800")
@@ -55,7 +58,7 @@ ventana.geometry("800x800")
 # Título principal
 titulo = tk.Label(
     ventana,
-    text="Catálogo de Álbumes Fotográficos",
+    text="Catálogo Turístico - Resistencia / Corrientes",
     font=("Helvetica", 24, "bold"),
     bg="#E8EAFE",
     fg="#1B1B3A"
@@ -127,11 +130,15 @@ for i, album in enumerate(albumes):
 # Pie de página
 autor = tk.Label(
     ventana,
-    text="Realizado por: Déborah Obes",
+    text="Realizado por: Grupo 4 (Deborah Obes, Brenda Torres)",
     font=("Helvetica", 11, "italic"),
     bg="#E8EAFE",
     fg="#333"
 )
 autor.pack(side="bottom", pady=15)
 
+
 ventana.mainloop()
+
+
+
